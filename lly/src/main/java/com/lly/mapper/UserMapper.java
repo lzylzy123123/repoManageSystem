@@ -1,15 +1,20 @@
 package com.lly.mapper;
 
-import java.util.List;
+import com.lly.entity.User;
 
 import org.apache.ibatis.annotations.Mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.lly.entity.User;
 
+/**
+ * <p>
+ *  Mapper 接口
+ * </p>
+ *
+ * @author lly
+ * @since 2024-08-19
+ */
 @Mapper
-public interface UserMapper extends BaseMapper<User>{
-
-  List<User> listAll();
+public interface UserMapper extends BaseMapper<User> {
 
 }
